@@ -11,8 +11,8 @@
   DTS:LocaleID="2057"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="46"
-  DTS:VersionGUID="{417EB7CF-66C6-45AF-840B-9C6D1712D490}">
+  DTS:VersionBuild="47"
+  DTS:VersionGUID="{47106F3A-0732-4A3F-B317-4FAFF12E7886}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -537,6 +537,146 @@
               DTS:TextQualified="True"
               DTS:ObjectName="TrimDesc"
               DTS:DTSID="{58B41910-96C0-4E30-9DB2-2A7DCBF5E75A}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 6]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{11240CCD-28D6-4D26-8147-0F9E701CFD8F}"
+      DTS:ObjectName="Flat File Connection Manager 6">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="2057"
+          DTS:Unicode="True"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="\\vmware-host\Shared Folders\CMM531 Data Warehousing\Labs\bad_sales data.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CustomerKey"
+              DTS:DTSID="{153EACD0-E940-4EF5-9DEF-6F8D5F9DBCA1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SupplierKey"
+              DTS:DTSID="{731334C8-AB51-4343-BF88-7D4550C14B7E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="EmployeeKey"
+              DTS:DTSID="{3DDF0F48-D5F2-42AE-BA51-E17FA038B4E5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="OrderDateKey"
+              DTS:DTSID="{600F4717-8AEF-42A2-9F45-C8FE7C265E19}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DueDateKey"
+              DTS:DTSID="{709A673B-EA4A-4709-B1B2-3FDCB9762B9B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ShippedDateKey"
+              DTS:DTSID="{B99243C1-3358-4584-A30B-BC2DC2E612D0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ShipperKey"
+              DTS:DTSID="{9092A74D-DEC7-4530-81FF-EBB92A38C1BF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ProductKey"
+              DTS:DTSID="{B16F7C8D-6622-4F8D-AB34-556308FB8627}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="OrderNo"
+              DTS:DTSID="{0DD1E416-8DF1-45F2-BE1E-BD14B362022B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="OrderLineNo"
+              DTS:DTSID="{4F6524F0-BDF8-4AB7-B43D-3FC330FE6279}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="6"
+              DTS:TextQualified="True"
+              DTS:ObjectName="UnitPrice"
+              DTS:DTSID="{08545488-35D1-45DE-B110-8D8DA9C09414}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Quantity"
+              DTS:DTSID="{B8779624-4833-4ED0-B3FA-39DA4C3946D5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="4"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Discount"
+              DTS:DTSID="{6961A20E-FBE1-4673-915A-E054FA1AD1A0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="6"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SalesAmount"
+              DTS:DTSID="{92E3F7F8-531A-4586-A8F7-0987982E9654}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="6"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Freight"
+              DTS:DTSID="{ACA3649E-0E41-4DD3-A9AE-B469B97CD67D}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -9863,15 +10003,85 @@ FROM            Categories INNER JOIN   Products ON Categories.CategoryID = Prod
                   refId="Package\Sales ETL\Conditional Split.Inputs[Conditional Split Input]"
                   description="Input to the Conditional Split Transformation"
                   name="Conditional Split Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Sales ETL\Conditional Split.Inputs[Conditional Split Input].Columns[CustomerKey]"
+                      cachedDataType="i4"
+                      cachedName="CustomerKey"
+                      lineageId="Package\Sales ETL\NorthWind DW SQL Query.Outputs[OLE DB Source Output].Columns[CustomerKey]" />
+                    <inputColumn
+                      refId="Package\Sales ETL\Conditional Split.Inputs[Conditional Split Input].Columns[SupplierKey]"
+                      cachedDataType="i4"
+                      cachedName="SupplierKey"
+                      lineageId="Package\Sales ETL\NorthWind DW SQL Query.Outputs[OLE DB Source Output].Columns[SupplierKey]" />
+                    <inputColumn
+                      refId="Package\Sales ETL\Conditional Split.Inputs[Conditional Split Input].Columns[EmployeeKey]"
+                      cachedDataType="i4"
+                      cachedName="EmployeeKey"
+                      lineageId="Package\Sales ETL\NorthWind DW SQL Query.Outputs[OLE DB Source Output].Columns[EmployeeKey]" />
+                    <inputColumn
+                      refId="Package\Sales ETL\Conditional Split.Inputs[Conditional Split Input].Columns[OrderDateKey]"
+                      cachedDataType="i4"
+                      cachedName="OrderDateKey"
+                      lineageId="Package\Sales ETL\NorthWind DW SQL Query.Outputs[OLE DB Source Output].Columns[OrderDateKey]" />
+                    <inputColumn
+                      refId="Package\Sales ETL\Conditional Split.Inputs[Conditional Split Input].Columns[DueDateKey]"
+                      cachedDataType="i4"
+                      cachedName="DueDateKey"
+                      lineageId="Package\Sales ETL\NorthWind DW SQL Query.Outputs[OLE DB Source Output].Columns[DueDateKey]" />
+                    <inputColumn
+                      refId="Package\Sales ETL\Conditional Split.Inputs[Conditional Split Input].Columns[ShippedDateKey]"
+                      cachedDataType="i4"
+                      cachedName="ShippedDateKey"
+                      lineageId="Package\Sales ETL\NorthWind DW SQL Query.Outputs[OLE DB Source Output].Columns[ShippedDateKey]" />
+                    <inputColumn
+                      refId="Package\Sales ETL\Conditional Split.Inputs[Conditional Split Input].Columns[ShipperKey]"
+                      cachedDataType="i4"
+                      cachedName="ShipperKey"
+                      lineageId="Package\Sales ETL\NorthWind DW SQL Query.Outputs[OLE DB Source Output].Columns[ShipperKey]" />
+                    <inputColumn
+                      refId="Package\Sales ETL\Conditional Split.Inputs[Conditional Split Input].Columns[ProductKey]"
+                      cachedDataType="i4"
+                      cachedName="ProductKey"
+                      lineageId="Package\Sales ETL\NorthWind DW SQL Query.Outputs[OLE DB Source Output].Columns[ProductKey]" />
+                  </inputColumns>
                   <externalMetadataColumns />
                 </input>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Sales ETL\Conditional Split.Outputs[Conditional Split Default Output]"
+                  refId="Package\Sales ETL\Conditional Split.Outputs[Foreign Keys Null]"
+                  description="Output 1 of the Conditional Split Transformation"
+                  errorOrTruncationOperation="Computation"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="Foreign Keys Null"
+                  synchronousInputId="Package\Sales ETL\Conditional Split.Inputs[Conditional Split Input]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                      name="Expression">[ISNULL](#{Package\Sales ETL\NorthWind DW SQL Query.Outputs[OLE DB Source Output].Columns[CustomerKey]}) || [ISNULL](#{Package\Sales ETL\NorthWind DW SQL Query.Outputs[OLE DB Source Output].Columns[EmployeeKey]}) || [ISNULL](#{Package\Sales ETL\NorthWind DW SQL Query.Outputs[OLE DB Source Output].Columns[OrderDateKey]}) || [ISNULL](#{Package\Sales ETL\NorthWind DW SQL Query.Outputs[OLE DB Source Output].Columns[DueDateKey]}) || [ISNULL](#{Package\Sales ETL\NorthWind DW SQL Query.Outputs[OLE DB Source Output].Columns[ShippedDateKey]}) || [ISNULL](#{Package\Sales ETL\NorthWind DW SQL Query.Outputs[OLE DB Source Output].Columns[ShipperKey]}) || [ISNULL](#{Package\Sales ETL\NorthWind DW SQL Query.Outputs[OLE DB Source Output].Columns[ProductKey]}) || [ISNULL](#{Package\Sales ETL\NorthWind DW SQL Query.Outputs[OLE DB Source Output].Columns[SupplierKey]})</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the friendly version of the expression. This expression version uses column names."
+                      expressionType="Notify"
+                      name="FriendlyExpression">ISNULL(CustomerKey) || ISNULL(EmployeeKey) || ISNULL(OrderDateKey) || ISNULL(DueDateKey) || ISNULL(ShippedDateKey) || ISNULL(ShipperKey) || ISNULL(ProductKey) || ISNULL(SupplierKey)</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                      name="EvaluationOrder">0</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Sales ETL\Conditional Split.Outputs[Foreign Keys OK]"
                   description="Default Output of the Conditional Split Transformation"
                   exclusionGroup="1"
-                  name="Conditional Split Default Output"
+                  name="Foreign Keys OK"
                   synchronousInputId="Package\Sales ETL\Conditional Split.Inputs[Conditional Split Input]">
                   <properties>
                     <property
@@ -9910,6 +10120,7 @@ FROM            Categories INNER JOIN   Products ON Categories.CategoryID = Prod
               componentClassID="Microsoft.FlatFileDestination"
               contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
               description="Flat File Destination"
+              localeId="2057"
               name="Flat File Destination">
               <properties>
                 <property
@@ -9917,14 +10128,16 @@ FROM            Categories INNER JOIN   Products ON Categories.CategoryID = Prod
                   description="Specifies whether the data will overwrite or append to the destination file."
                   name="Overwrite">true</property>
                 <property
-                  dataType="System.String"
+                  dataType="System.Null"
                   description="Specifies the text to write to the destination file before any data is written."
                   expressionType="Notify"
-                  name="Header"></property>
+                  name="Header" />
               </properties>
               <connections>
                 <connection
                   refId="Package\Sales ETL\Flat File Destination.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 6]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 6]"
                   name="FlatFileConnection" />
               </connections>
               <inputs>
@@ -9932,8 +10145,161 @@ FROM            Categories INNER JOIN   Products ON Categories.CategoryID = Prod
                   refId="Package\Sales ETL\Flat File Destination.Inputs[Flat File Destination Input]"
                   hasSideEffects="true"
                   name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Sales ETL\Flat File Destination.Inputs[Flat File Destination Input].Columns[CustomerKey]"
+                      cachedDataType="i4"
+                      cachedName="CustomerKey"
+                      externalMetadataColumnId="Package\Sales ETL\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CustomerKey]"
+                      lineageId="Package\Sales ETL\NorthWind DW SQL Query.Outputs[OLE DB Source Output].Columns[CustomerKey]" />
+                    <inputColumn
+                      refId="Package\Sales ETL\Flat File Destination.Inputs[Flat File Destination Input].Columns[SupplierKey]"
+                      cachedDataType="i4"
+                      cachedName="SupplierKey"
+                      externalMetadataColumnId="Package\Sales ETL\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[SupplierKey]"
+                      lineageId="Package\Sales ETL\NorthWind DW SQL Query.Outputs[OLE DB Source Output].Columns[SupplierKey]" />
+                    <inputColumn
+                      refId="Package\Sales ETL\Flat File Destination.Inputs[Flat File Destination Input].Columns[EmployeeKey]"
+                      cachedDataType="i4"
+                      cachedName="EmployeeKey"
+                      externalMetadataColumnId="Package\Sales ETL\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[EmployeeKey]"
+                      lineageId="Package\Sales ETL\NorthWind DW SQL Query.Outputs[OLE DB Source Output].Columns[EmployeeKey]" />
+                    <inputColumn
+                      refId="Package\Sales ETL\Flat File Destination.Inputs[Flat File Destination Input].Columns[OrderDateKey]"
+                      cachedDataType="i4"
+                      cachedName="OrderDateKey"
+                      externalMetadataColumnId="Package\Sales ETL\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[OrderDateKey]"
+                      lineageId="Package\Sales ETL\NorthWind DW SQL Query.Outputs[OLE DB Source Output].Columns[OrderDateKey]" />
+                    <inputColumn
+                      refId="Package\Sales ETL\Flat File Destination.Inputs[Flat File Destination Input].Columns[DueDateKey]"
+                      cachedDataType="i4"
+                      cachedName="DueDateKey"
+                      externalMetadataColumnId="Package\Sales ETL\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[DueDateKey]"
+                      lineageId="Package\Sales ETL\NorthWind DW SQL Query.Outputs[OLE DB Source Output].Columns[DueDateKey]" />
+                    <inputColumn
+                      refId="Package\Sales ETL\Flat File Destination.Inputs[Flat File Destination Input].Columns[ShippedDateKey]"
+                      cachedDataType="i4"
+                      cachedName="ShippedDateKey"
+                      externalMetadataColumnId="Package\Sales ETL\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ShippedDateKey]"
+                      lineageId="Package\Sales ETL\NorthWind DW SQL Query.Outputs[OLE DB Source Output].Columns[ShippedDateKey]" />
+                    <inputColumn
+                      refId="Package\Sales ETL\Flat File Destination.Inputs[Flat File Destination Input].Columns[ShipperKey]"
+                      cachedDataType="i4"
+                      cachedName="ShipperKey"
+                      externalMetadataColumnId="Package\Sales ETL\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ShipperKey]"
+                      lineageId="Package\Sales ETL\NorthWind DW SQL Query.Outputs[OLE DB Source Output].Columns[ShipperKey]" />
+                    <inputColumn
+                      refId="Package\Sales ETL\Flat File Destination.Inputs[Flat File Destination Input].Columns[ProductKey]"
+                      cachedDataType="i4"
+                      cachedName="ProductKey"
+                      externalMetadataColumnId="Package\Sales ETL\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ProductKey]"
+                      lineageId="Package\Sales ETL\NorthWind DW SQL Query.Outputs[OLE DB Source Output].Columns[ProductKey]" />
+                    <inputColumn
+                      refId="Package\Sales ETL\Flat File Destination.Inputs[Flat File Destination Input].Columns[OrderNo]"
+                      cachedDataType="i4"
+                      cachedName="OrderNo"
+                      externalMetadataColumnId="Package\Sales ETL\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[OrderNo]"
+                      lineageId="Package\Sales ETL\NorthWind DW SQL Query.Outputs[OLE DB Source Output].Columns[OrderNo]" />
+                    <inputColumn
+                      refId="Package\Sales ETL\Flat File Destination.Inputs[Flat File Destination Input].Columns[OrderLineNo]"
+                      cachedDataType="i4"
+                      cachedName="OrderLineNo"
+                      externalMetadataColumnId="Package\Sales ETL\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[OrderLineNo]"
+                      lineageId="Package\Sales ETL\NorthWind DW SQL Query.Outputs[OLE DB Source Output].Columns[OrderLineNo]" />
+                    <inputColumn
+                      refId="Package\Sales ETL\Flat File Destination.Inputs[Flat File Destination Input].Columns[UnitPrice]"
+                      cachedDataType="cy"
+                      cachedName="UnitPrice"
+                      externalMetadataColumnId="Package\Sales ETL\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[UnitPrice]"
+                      lineageId="Package\Sales ETL\NorthWind DW SQL Query.Outputs[OLE DB Source Output].Columns[UnitPrice]" />
+                    <inputColumn
+                      refId="Package\Sales ETL\Flat File Destination.Inputs[Flat File Destination Input].Columns[Quantity]"
+                      cachedDataType="i2"
+                      cachedName="Quantity"
+                      externalMetadataColumnId="Package\Sales ETL\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Quantity]"
+                      lineageId="Package\Sales ETL\NorthWind DW SQL Query.Outputs[OLE DB Source Output].Columns[Quantity]" />
+                    <inputColumn
+                      refId="Package\Sales ETL\Flat File Destination.Inputs[Flat File Destination Input].Columns[Discount]"
+                      cachedDataType="r4"
+                      cachedName="Discount"
+                      externalMetadataColumnId="Package\Sales ETL\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Discount]"
+                      lineageId="Package\Sales ETL\NorthWind DW SQL Query.Outputs[OLE DB Source Output].Columns[Discount]" />
+                    <inputColumn
+                      refId="Package\Sales ETL\Flat File Destination.Inputs[Flat File Destination Input].Columns[SalesAmount]"
+                      cachedDataType="cy"
+                      cachedName="SalesAmount"
+                      externalMetadataColumnId="Package\Sales ETL\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[SalesAmount]"
+                      lineageId="Package\Sales ETL\NorthWind DW SQL Query.Outputs[OLE DB Source Output].Columns[SalesAmount]" />
+                    <inputColumn
+                      refId="Package\Sales ETL\Flat File Destination.Inputs[Flat File Destination Input].Columns[Freight]"
+                      cachedDataType="cy"
+                      cachedName="Freight"
+                      externalMetadataColumnId="Package\Sales ETL\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Freight]"
+                      lineageId="Package\Sales ETL\NorthWind DW SQL Query.Outputs[OLE DB Source Output].Columns[Freight]" />
+                  </inputColumns>
                   <externalMetadataColumns
-                    isUsed="True" />
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Sales ETL\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CustomerKey]"
+                      dataType="i4"
+                      name="CustomerKey" />
+                    <externalMetadataColumn
+                      refId="Package\Sales ETL\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[SupplierKey]"
+                      dataType="i4"
+                      name="SupplierKey" />
+                    <externalMetadataColumn
+                      refId="Package\Sales ETL\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[EmployeeKey]"
+                      dataType="i4"
+                      name="EmployeeKey" />
+                    <externalMetadataColumn
+                      refId="Package\Sales ETL\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[OrderDateKey]"
+                      dataType="i4"
+                      name="OrderDateKey" />
+                    <externalMetadataColumn
+                      refId="Package\Sales ETL\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[DueDateKey]"
+                      dataType="i4"
+                      name="DueDateKey" />
+                    <externalMetadataColumn
+                      refId="Package\Sales ETL\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ShippedDateKey]"
+                      dataType="i4"
+                      name="ShippedDateKey" />
+                    <externalMetadataColumn
+                      refId="Package\Sales ETL\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ShipperKey]"
+                      dataType="i4"
+                      name="ShipperKey" />
+                    <externalMetadataColumn
+                      refId="Package\Sales ETL\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ProductKey]"
+                      dataType="i4"
+                      name="ProductKey" />
+                    <externalMetadataColumn
+                      refId="Package\Sales ETL\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[OrderNo]"
+                      dataType="i4"
+                      name="OrderNo" />
+                    <externalMetadataColumn
+                      refId="Package\Sales ETL\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[OrderLineNo]"
+                      dataType="i4"
+                      name="OrderLineNo" />
+                    <externalMetadataColumn
+                      refId="Package\Sales ETL\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[UnitPrice]"
+                      dataType="cy"
+                      name="UnitPrice" />
+                    <externalMetadataColumn
+                      refId="Package\Sales ETL\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Quantity]"
+                      dataType="i2"
+                      name="Quantity" />
+                    <externalMetadataColumn
+                      refId="Package\Sales ETL\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Discount]"
+                      dataType="r4"
+                      name="Discount" />
+                    <externalMetadataColumn
+                      refId="Package\Sales ETL\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[SalesAmount]"
+                      dataType="cy"
+                      name="SalesAmount" />
+                    <externalMetadataColumn
+                      refId="Package\Sales ETL\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Freight]"
+                      dataType="cy"
+                      name="Freight" />
+                  </externalMetadataColumns>
                 </input>
               </inputs>
             </component>
@@ -10316,11 +10682,11 @@ WHERE O.OrderID = D.OrderID AND D.ProductID = P.ProductID</property>
               </outputs>
             </component>
             <component
-              refId="Package\Sales ETL\OLE DB Destination"
+              refId="Package\Sales ETL\Sales Load"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
               description="OLE DB Destination"
-              name="OLE DB Destination"
+              name="Sales Load"
               usesDispositions="true"
               version="4">
               <properties>
@@ -10331,7 +10697,7 @@ WHERE O.OrderID = D.OrderID AND D.ProductID = P.ProductID</property>
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset"></property>
+                  name="OpenRowset">[dbo].[Sales]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -10353,7 +10719,7 @@ WHERE O.OrderID = D.OrderID AND D.ProductID = P.ProductID</property>
                   dataType="System.Int32"
                   description="Specifies the mode used to access the database."
                   name="AccessMode"
-                  typeConverter="AccessMode">0</property>
+                  typeConverter="AccessMode">3</property>
                 <property
                   dataType="System.Boolean"
                   description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
@@ -10365,7 +10731,7 @@ WHERE O.OrderID = D.OrderID AND D.ProductID = P.ProductID</property>
                 <property
                   dataType="System.String"
                   description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
-                  name="FastLoadOptions"></property>
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
@@ -10373,39 +10739,194 @@ WHERE O.OrderID = D.OrderID AND D.ProductID = P.ProductID</property>
               </properties>
               <connections>
                 <connection
-                  refId="Package\Sales ETL\OLE DB Destination.Connections[OleDbConnection]"
+                  refId="Package\Sales ETL\Sales Load.Connections[OleDbConnection]"
+                  connectionManagerID="{7183E00B-8B30-4B8D-943E-C850069B9049}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[LocalHost.NorthwindDW2]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
               <inputs>
                 <input
-                  refId="Package\Sales ETL\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  refId="Package\Sales ETL\Sales Load.Inputs[OLE DB Destination Input]"
                   errorOrTruncationOperation="Insert"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Sales ETL\Sales Load.Inputs[OLE DB Destination Input].Columns[CustomerKey]"
+                      cachedDataType="i4"
+                      cachedName="CustomerKey"
+                      externalMetadataColumnId="Package\Sales ETL\Sales Load.Inputs[OLE DB Destination Input].ExternalColumns[CustomerKey]"
+                      lineageId="Package\Sales ETL\NorthWind DW SQL Query.Outputs[OLE DB Source Output].Columns[CustomerKey]" />
+                    <inputColumn
+                      refId="Package\Sales ETL\Sales Load.Inputs[OLE DB Destination Input].Columns[SupplierKey]"
+                      cachedDataType="i4"
+                      cachedName="SupplierKey"
+                      externalMetadataColumnId="Package\Sales ETL\Sales Load.Inputs[OLE DB Destination Input].ExternalColumns[SupplierKey]"
+                      lineageId="Package\Sales ETL\NorthWind DW SQL Query.Outputs[OLE DB Source Output].Columns[SupplierKey]" />
+                    <inputColumn
+                      refId="Package\Sales ETL\Sales Load.Inputs[OLE DB Destination Input].Columns[EmployeeKey]"
+                      cachedDataType="i4"
+                      cachedName="EmployeeKey"
+                      externalMetadataColumnId="Package\Sales ETL\Sales Load.Inputs[OLE DB Destination Input].ExternalColumns[EmployeeKey]"
+                      lineageId="Package\Sales ETL\NorthWind DW SQL Query.Outputs[OLE DB Source Output].Columns[EmployeeKey]" />
+                    <inputColumn
+                      refId="Package\Sales ETL\Sales Load.Inputs[OLE DB Destination Input].Columns[OrderDateKey]"
+                      cachedDataType="i4"
+                      cachedName="OrderDateKey"
+                      externalMetadataColumnId="Package\Sales ETL\Sales Load.Inputs[OLE DB Destination Input].ExternalColumns[OrderDateKey]"
+                      lineageId="Package\Sales ETL\NorthWind DW SQL Query.Outputs[OLE DB Source Output].Columns[OrderDateKey]" />
+                    <inputColumn
+                      refId="Package\Sales ETL\Sales Load.Inputs[OLE DB Destination Input].Columns[DueDateKey]"
+                      cachedDataType="i4"
+                      cachedName="DueDateKey"
+                      externalMetadataColumnId="Package\Sales ETL\Sales Load.Inputs[OLE DB Destination Input].ExternalColumns[DueDateKey]"
+                      lineageId="Package\Sales ETL\NorthWind DW SQL Query.Outputs[OLE DB Source Output].Columns[DueDateKey]" />
+                    <inputColumn
+                      refId="Package\Sales ETL\Sales Load.Inputs[OLE DB Destination Input].Columns[ShippedDateKey]"
+                      cachedDataType="i4"
+                      cachedName="ShippedDateKey"
+                      externalMetadataColumnId="Package\Sales ETL\Sales Load.Inputs[OLE DB Destination Input].ExternalColumns[ShippedDateKey]"
+                      lineageId="Package\Sales ETL\NorthWind DW SQL Query.Outputs[OLE DB Source Output].Columns[ShippedDateKey]" />
+                    <inputColumn
+                      refId="Package\Sales ETL\Sales Load.Inputs[OLE DB Destination Input].Columns[ShipperKey]"
+                      cachedDataType="i4"
+                      cachedName="ShipperKey"
+                      externalMetadataColumnId="Package\Sales ETL\Sales Load.Inputs[OLE DB Destination Input].ExternalColumns[ShipperKey]"
+                      lineageId="Package\Sales ETL\NorthWind DW SQL Query.Outputs[OLE DB Source Output].Columns[ShipperKey]" />
+                    <inputColumn
+                      refId="Package\Sales ETL\Sales Load.Inputs[OLE DB Destination Input].Columns[ProductKey]"
+                      cachedDataType="i4"
+                      cachedName="ProductKey"
+                      externalMetadataColumnId="Package\Sales ETL\Sales Load.Inputs[OLE DB Destination Input].ExternalColumns[ProductKey]"
+                      lineageId="Package\Sales ETL\NorthWind DW SQL Query.Outputs[OLE DB Source Output].Columns[ProductKey]" />
+                    <inputColumn
+                      refId="Package\Sales ETL\Sales Load.Inputs[OLE DB Destination Input].Columns[OrderNo]"
+                      cachedDataType="i4"
+                      cachedName="OrderNo"
+                      externalMetadataColumnId="Package\Sales ETL\Sales Load.Inputs[OLE DB Destination Input].ExternalColumns[OrderNo]"
+                      lineageId="Package\Sales ETL\NorthWind DW SQL Query.Outputs[OLE DB Source Output].Columns[OrderNo]" />
+                    <inputColumn
+                      refId="Package\Sales ETL\Sales Load.Inputs[OLE DB Destination Input].Columns[OrderLineNo]"
+                      cachedDataType="i4"
+                      cachedName="OrderLineNo"
+                      externalMetadataColumnId="Package\Sales ETL\Sales Load.Inputs[OLE DB Destination Input].ExternalColumns[OrderLineNo]"
+                      lineageId="Package\Sales ETL\NorthWind DW SQL Query.Outputs[OLE DB Source Output].Columns[OrderLineNo]" />
+                    <inputColumn
+                      refId="Package\Sales ETL\Sales Load.Inputs[OLE DB Destination Input].Columns[UnitPrice]"
+                      cachedDataType="cy"
+                      cachedName="UnitPrice"
+                      externalMetadataColumnId="Package\Sales ETL\Sales Load.Inputs[OLE DB Destination Input].ExternalColumns[UnitPrice]"
+                      lineageId="Package\Sales ETL\NorthWind DW SQL Query.Outputs[OLE DB Source Output].Columns[UnitPrice]" />
+                    <inputColumn
+                      refId="Package\Sales ETL\Sales Load.Inputs[OLE DB Destination Input].Columns[Quantity]"
+                      cachedDataType="i2"
+                      cachedName="Quantity"
+                      externalMetadataColumnId="Package\Sales ETL\Sales Load.Inputs[OLE DB Destination Input].ExternalColumns[Quantity]"
+                      lineageId="Package\Sales ETL\NorthWind DW SQL Query.Outputs[OLE DB Source Output].Columns[Quantity]" />
+                    <inputColumn
+                      refId="Package\Sales ETL\Sales Load.Inputs[OLE DB Destination Input].Columns[Discount]"
+                      cachedDataType="r4"
+                      cachedName="Discount"
+                      externalMetadataColumnId="Package\Sales ETL\Sales Load.Inputs[OLE DB Destination Input].ExternalColumns[Discount]"
+                      lineageId="Package\Sales ETL\NorthWind DW SQL Query.Outputs[OLE DB Source Output].Columns[Discount]" />
+                    <inputColumn
+                      refId="Package\Sales ETL\Sales Load.Inputs[OLE DB Destination Input].Columns[SalesAmount]"
+                      cachedDataType="cy"
+                      cachedName="SalesAmount"
+                      externalMetadataColumnId="Package\Sales ETL\Sales Load.Inputs[OLE DB Destination Input].ExternalColumns[SalesAmount]"
+                      lineageId="Package\Sales ETL\NorthWind DW SQL Query.Outputs[OLE DB Source Output].Columns[SalesAmount]" />
+                    <inputColumn
+                      refId="Package\Sales ETL\Sales Load.Inputs[OLE DB Destination Input].Columns[Freight]"
+                      cachedDataType="cy"
+                      cachedName="Freight"
+                      externalMetadataColumnId="Package\Sales ETL\Sales Load.Inputs[OLE DB Destination Input].ExternalColumns[Freight]"
+                      lineageId="Package\Sales ETL\NorthWind DW SQL Query.Outputs[OLE DB Source Output].Columns[Freight]" />
+                  </inputColumns>
                   <externalMetadataColumns
-                    isUsed="True" />
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Sales ETL\Sales Load.Inputs[OLE DB Destination Input].ExternalColumns[CustomerKey]"
+                      dataType="i4"
+                      name="CustomerKey" />
+                    <externalMetadataColumn
+                      refId="Package\Sales ETL\Sales Load.Inputs[OLE DB Destination Input].ExternalColumns[EmployeeKey]"
+                      dataType="i4"
+                      name="EmployeeKey" />
+                    <externalMetadataColumn
+                      refId="Package\Sales ETL\Sales Load.Inputs[OLE DB Destination Input].ExternalColumns[OrderDateKey]"
+                      dataType="i4"
+                      name="OrderDateKey" />
+                    <externalMetadataColumn
+                      refId="Package\Sales ETL\Sales Load.Inputs[OLE DB Destination Input].ExternalColumns[DueDateKey]"
+                      dataType="i4"
+                      name="DueDateKey" />
+                    <externalMetadataColumn
+                      refId="Package\Sales ETL\Sales Load.Inputs[OLE DB Destination Input].ExternalColumns[ShippedDateKey]"
+                      dataType="i4"
+                      name="ShippedDateKey" />
+                    <externalMetadataColumn
+                      refId="Package\Sales ETL\Sales Load.Inputs[OLE DB Destination Input].ExternalColumns[ShipperKey]"
+                      dataType="i4"
+                      name="ShipperKey" />
+                    <externalMetadataColumn
+                      refId="Package\Sales ETL\Sales Load.Inputs[OLE DB Destination Input].ExternalColumns[ProductKey]"
+                      dataType="i4"
+                      name="ProductKey" />
+                    <externalMetadataColumn
+                      refId="Package\Sales ETL\Sales Load.Inputs[OLE DB Destination Input].ExternalColumns[SupplierKey]"
+                      dataType="i4"
+                      name="SupplierKey" />
+                    <externalMetadataColumn
+                      refId="Package\Sales ETL\Sales Load.Inputs[OLE DB Destination Input].ExternalColumns[OrderNo]"
+                      dataType="i4"
+                      name="OrderNo" />
+                    <externalMetadataColumn
+                      refId="Package\Sales ETL\Sales Load.Inputs[OLE DB Destination Input].ExternalColumns[OrderLineNo]"
+                      dataType="i4"
+                      name="OrderLineNo" />
+                    <externalMetadataColumn
+                      refId="Package\Sales ETL\Sales Load.Inputs[OLE DB Destination Input].ExternalColumns[UnitPrice]"
+                      dataType="cy"
+                      name="UnitPrice" />
+                    <externalMetadataColumn
+                      refId="Package\Sales ETL\Sales Load.Inputs[OLE DB Destination Input].ExternalColumns[Quantity]"
+                      dataType="i2"
+                      name="Quantity" />
+                    <externalMetadataColumn
+                      refId="Package\Sales ETL\Sales Load.Inputs[OLE DB Destination Input].ExternalColumns[Discount]"
+                      dataType="r4"
+                      name="Discount" />
+                    <externalMetadataColumn
+                      refId="Package\Sales ETL\Sales Load.Inputs[OLE DB Destination Input].ExternalColumns[SalesAmount]"
+                      dataType="cy"
+                      name="SalesAmount" />
+                    <externalMetadataColumn
+                      refId="Package\Sales ETL\Sales Load.Inputs[OLE DB Destination Input].ExternalColumns[Freight]"
+                      dataType="cy"
+                      name="Freight" />
+                  </externalMetadataColumns>
                 </input>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Sales ETL\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  refId="Package\Sales ETL\Sales Load.Outputs[OLE DB Destination Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="OLE DB Destination Error Output"
-                  synchronousInputId="Package\Sales ETL\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  synchronousInputId="Package\Sales ETL\Sales Load.Inputs[OLE DB Destination Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Sales ETL\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      refId="Package\Sales ETL\Sales Load.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Sales ETL\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Sales ETL\Sales Load.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Sales ETL\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      refId="Package\Sales ETL\Sales Load.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Sales ETL\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Sales ETL\Sales Load.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -10415,6 +10936,16 @@ WHERE O.OrderID = D.OrderID AND D.ProductID = P.ProductID</property>
             </component>
           </components>
           <paths>
+            <path
+              refId="Package\Sales ETL.Paths[Foreign Keys Null]"
+              endId="Package\Sales ETL\Flat File Destination.Inputs[Flat File Destination Input]"
+              name="Foreign Keys Null"
+              startId="Package\Sales ETL\Conditional Split.Outputs[Foreign Keys Null]" />
+            <path
+              refId="Package\Sales ETL.Paths[Foreign Keys OK]"
+              endId="Package\Sales ETL\Sales Load.Inputs[OLE DB Destination Input]"
+              name="Foreign Keys OK"
+              startId="Package\Sales ETL\Conditional Split.Outputs[Foreign Keys OK]" />
             <path
               refId="Package\Sales ETL.Paths[OLE DB Source Output]"
               endId="Package\Sales ETL\Conditional Split.Inputs[Conditional Split Input]"
@@ -16233,7 +16764,7 @@ ON E.TerritoryID = T.TerritoryID</property>
     design-time-name="Package\Sales ETL">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="205,42"
           Id="Package\Sales ETL\NorthWind DW SQL Query"
@@ -16241,10 +16772,10 @@ ON E.TerritoryID = T.TerritoryID</property>
         <NodeLayout
           Size="157,42"
           Id="Package\Sales ETL\Conditional Split"
-          TopLeft="322.5,12.5" />
+          TopLeft="320.5,12.5" />
         <NodeLayout
-          Size="173,42"
-          Id="Package\Sales ETL\OLE DB Destination"
+          Size="131,42"
+          Id="Package\Sales ETL\Sales Load"
           TopLeft="568,10" />
         <NodeLayout
           Size="174,42"
@@ -16256,32 +16787,80 @@ ON E.TerritoryID = T.TerritoryID</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="75,10"
+              EndConnector="73,10"
               Start="0,0"
-              End="67.5,10">
+              End="65.5,10">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="33.5,0" />
+                    End="32.5,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="33.5,0"
-                    Point2="37.5,0"
-                    Point3="37.5,4" />
+                    Point1="32.5,0"
+                    Point2="36.5,0"
+                    Point3="36.5,4" />
                   <mssgle:LineSegment
-                    End="37.5,6" />
+                    End="36.5,6" />
                   <mssgle:CubicBezierSegment
-                    Point1="37.5,6"
-                    Point2="37.5,10"
-                    Point3="41.5,10" />
+                    Point1="36.5,6"
+                    Point2="36.5,10"
+                    Point3="40.5,10" />
                   <mssgle:LineSegment
-                    End="67.5,10" />
+                    End="65.5,10" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sales ETL.Paths[Foreign Keys OK]"
+          TopLeft="477.5,32.25">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="90.5,0"
+              Start="0,0"
+              End="83,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="83,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="4.44107421875,5,74.1178515625,11.4873046875"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sales ETL.Paths[Foreign Keys Null]"
+          TopLeft="400.5,54.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,107.5"
+              Start="0,0"
+              End="0,100">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,100" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-38.57212890625,44.16845703125,77.1442578125,11.6630859375"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -16292,6 +16871,19 @@ ON E.TerritoryID = T.TerritoryID</property>
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sales ETL\Sales Load">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
